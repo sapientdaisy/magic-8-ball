@@ -5,7 +5,7 @@ $(document).ready(function(){
 var magic8Ball = {};
 
 magic8Ball.listOfAnswers = ["Ask again later",
-"Don’t count on it", "Totally", "Not feelin' it", "Improbable", "Yep"];
+"Don’t count on it", "Totally", "Not feelin' it", "Reply hazy try again", "Yep"];
 
 
 magic8Ball.giveAnswer =function(question){
@@ -27,7 +27,7 @@ magic8Ball.askQuestion = function (){
       $("#answer").hide();
       $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
       setTimeout(function() {
-        prompt("What is your question?");
+        prompt("ASK A YES/NO QUESTION");
         $("#8ball").effect("shake");
         $("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");
         magic8Ball.giveAnswer();
